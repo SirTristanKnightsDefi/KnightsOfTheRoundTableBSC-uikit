@@ -11,7 +11,7 @@ import * as IconModule from "./icons";
 import { socials, MENU_ENTRY_HEIGHT } from "./config";
 import { PanelProps, PushedProps } from "./types";
 
-import LogoImg from './logo.png';
+import LogoImg from "./logo.png";
 
 interface Props extends PanelProps, PushedProps {}
 
@@ -61,10 +61,14 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd }) => {
       <SocialEntry>
         {cakePriceUsd ? (
           <PriceLink href="https://pancakeswap.info/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82" target="_blank">
-            <img src={LogoImg} alt="Milkswap Logo" style={{
-              width: '24px',
-              marginRight: '8px',
-            }} />
+            <img
+              src={LogoImg}
+              alt="Milkswap Logo"
+              style={{
+                width: "24px",
+                marginRight: "8px",
+              }}
+            />
 
             <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
           </PriceLink>

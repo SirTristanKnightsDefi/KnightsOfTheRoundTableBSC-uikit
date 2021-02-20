@@ -5,8 +5,8 @@ import Flex from "../../components/Flex/Flex";
 import { HamburgerIcon, HamburgerCloseIcon } from "./icons";
 import MenuButton from "./MenuButton";
 
-import LogoImg from './logo.png';
-import LogoWithTextImg from './logoWithText.png';
+import LogoImg from "./logo.png";
+import LogoWithTextImg from "./logoWithText.png";
 
 interface Props {
   isPushed: boolean;
