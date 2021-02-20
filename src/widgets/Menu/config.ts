@@ -122,7 +122,6 @@ export const socials = [
         label: "English",
         href: "https://t.me/pancakeswap",
       },
-
     ],
   },
   {

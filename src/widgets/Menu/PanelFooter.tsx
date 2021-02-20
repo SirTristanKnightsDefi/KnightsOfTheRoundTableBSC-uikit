@@ -43,11 +43,7 @@ const SocialEntry = styled.div`
   padding: 0 16px;
 `;
 
-const PanelFooter: React.FC<Props> = ({
-  isPushed,
-  pushNav,
-  cakePriceUsd,
-}) => {
+const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd }) => {
   if (!isPushed) {
     return (
       <Container>

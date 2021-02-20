@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 const StyledTh = styled.th`
-  background: #EBF8FF;
+  background: #ebf8ff;
   padding: 8px;
   font-size: 12px;
-  color: #5CC9FF;
+  color: #5cc9ff;
 
   &:first-child {
     border-top-left-radius: 4px;
