@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { LogoIcon } from "../../components/Svg";
 import Flex from "../../components/Flex/Flex";
-import { HamburgerIcon, HamburgerCloseIcon, LogoIcon as LogoWithText } from "./icons";
+import { HamburgerIcon, HamburgerCloseIcon } from "./icons";
 import MenuButton from "./MenuButton";
+
+import LogoImg from './logo.png';
+import LogoWithTextImg from './logoWithText.png';
 
 interface Props {
   isPushed: boolean;
@@ -33,12 +35,6 @@ const StyledLink = styled(Link)`
 
 const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
-  const innerLogo = (
-    <>
-      <LogoIcon className="mobile-icon" />
-      <LogoWithText className="desktop-icon" isDark={isDark} />
-    </>
-  );
 
   return (
     <Flex>
@@ -50,12 +46,14 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
         )}
       </MenuButton>
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Pancake home page">
-          {innerLogo}
+        <StyledLink as="a" href={href} aria-label="MilkSwap home page">
+          <img src={LogoImg} alt="Milkswap Logo" className="mobile-icon" />
+          <img src={LogoWithTextImg} alt="Milkswap Logo" className="desktop-icon" />
         </StyledLink>
       ) : (
-        <StyledLink to={href} aria-label="Pancake home page">
-          {innerLogo}
+        <StyledLink to={href} aria-label="MilkSwap home page">
+          <img src={LogoImg} alt="Milkswap Logo" className="mobile-icon" />
+          <img src={LogoWithTextImg} alt="Milkswap Logo" className="desktop-icon" />
         </StyledLink>
       )}
     </Flex>
