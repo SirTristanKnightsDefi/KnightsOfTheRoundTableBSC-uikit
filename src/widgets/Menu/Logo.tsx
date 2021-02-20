@@ -5,9 +5,6 @@ import Flex from "../../components/Flex/Flex";
 import { HamburgerIcon, HamburgerCloseIcon } from "./icons";
 import MenuButton from "./MenuButton";
 
-import LogoImg from "./logo.png";
-import LogoWithTextImg from "./logoWithText.png";
-
 interface Props {
   isPushed: boolean;
   isDark: boolean;
@@ -47,13 +44,13 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       </MenuButton>
       {isAbsoluteUrl ? (
         <StyledLink as="a" href={href} aria-label="MilkSwap home page">
-          <img src={LogoImg} alt="Milkswap Logo" className="mobile-icon" />
-          <img src={LogoWithTextImg} alt="Milkswap Logo" className="desktop-icon" />
+          <img src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.png?raw=true" alt="Milkswap Logo" className="mobile-icon" />
+          <img src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.png?raw=true" alt="Milkswap Logo" className="desktop-icon" />
         </StyledLink>
       ) : (
         <StyledLink to={href} aria-label="MilkSwap home page">
-          <img src={LogoImg} alt="Milkswap Logo" className="mobile-icon" />
-          <img src={LogoWithTextImg} alt="Milkswap Logo" className="desktop-icon" />
+          <img src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.png?raw=true" alt="Milkswap Logo" className="mobile-icon" />
+          <img src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.png?raw=true" alt="Milkswap Logo" className="desktop-icon" />
         </StyledLink>
       )}
     </Flex>

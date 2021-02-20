@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PancakeRoundIcon, CogIcon, SvgProps } from "../../components/Svg";
+import { CogIcon, SvgProps } from "../../components/Svg";
 import Text from "../../components/Text/Text";
 import Flex from "../../components/Flex/Flex";
 import Dropdown from "../../components/Dropdown/Dropdown";
@@ -10,8 +10,6 @@ import IconButton from "../../components/Button/IconButton";
 import * as IconModule from "./icons";
 import { socials, MENU_ENTRY_HEIGHT } from "./config";
 import { PanelProps, PushedProps } from "./types";
-
-import LogoImg from "./logo.png";
 
 interface Props extends PanelProps, PushedProps {}
 
@@ -62,7 +60,7 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd }) => {
         {cakePriceUsd ? (
           <PriceLink href="https://pancakeswap.info/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82" target="_blank">
             <img
-              src={LogoImg}
+              src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.png?raw=true"
               alt="Milkswap Logo"
               style={{
                 width: "24px",
