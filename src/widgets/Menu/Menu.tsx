@@ -31,19 +31,6 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   border-bottom: solid 2px rgba(133, 133, 133, 0.1);
   z-index: 20;
   transform: translate3d(0, 0, 0);
-
-  /*
-  &::after {
-    content: '';
-    background-image: url(${MilkBorderFile});
-    position: absolute;
-    height: 52px;
-    width: 100%;
-    bottom: -52px;
-    background-position: bottom;
-    background-size: cover;
-  }
-  */
 `;
 
 const BodyWrapper = styled.div`
