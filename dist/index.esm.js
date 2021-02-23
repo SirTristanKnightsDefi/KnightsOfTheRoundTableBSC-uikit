@@ -2074,10 +2074,10 @@ var Logo$1 = function (_a) {
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$N, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$M, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React.createElement(StyledLink$1, { as: "a", href: href, "aria-label": "MilkSwap home page" },
-            React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.png?raw=true", alt: "Milkswap Logo", className: "mobile-icon" }),
-            React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.png?raw=true", alt: "Milkswap Logo", className: "desktop-icon" }))) : (React.createElement(StyledLink$1, { to: href, "aria-label": "MilkSwap home page" },
-            React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.png?raw=true", alt: "Milkswap Logo", className: "mobile-icon" }),
-            React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.png?raw=true", alt: "Milkswap Logo", className: "desktop-icon" })))));
+            React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "Milkswap Logo", className: "mobile-icon" }),
+            React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/milkswap_logo.svg?raw=true", alt: "Milkswap Logo", className: "desktop-icon" }))) : (React.createElement(StyledLink$1, { to: href, "aria-label": "MilkSwap home page" },
+            React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "Milkswap Logo", className: "mobile-icon" }),
+            React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/milkswap_logo.svg?raw=true", alt: "Milkswap Logo", className: "desktop-icon" })))));
 };
 var templateObject_1$y;
 

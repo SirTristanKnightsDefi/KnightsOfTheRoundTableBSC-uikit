@@ -45,12 +45,12 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       {isAbsoluteUrl ? (
         <StyledLink as="a" href={href} aria-label="MilkSwap home page">
           <img
-            src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.png?raw=true"
+            src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true"
             alt="Milkswap Logo"
             className="mobile-icon"
           />
           <img
-            src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.png?raw=true"
+            src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/milkswap_logo.svg?raw=true"
             alt="Milkswap Logo"
             className="desktop-icon"
           />
@@ -58,12 +58,12 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       ) : (
         <StyledLink to={href} aria-label="MilkSwap home page">
           <img
-            src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.png?raw=true"
+            src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true"
             alt="Milkswap Logo"
             className="mobile-icon"
           />
           <img
-            src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.png?raw=true"
+            src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/milkswap_logo.svg?raw=true"
             alt="Milkswap Logo"
             className="desktop-icon"
           />
