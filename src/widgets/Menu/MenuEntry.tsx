@@ -24,6 +24,7 @@ const LinkLabel = styled.div<{ isPushed: boolean }>`
 `;
 
 const MenuEntry = styled.div<Props>`
+  font-weight: 600;
   cursor: pointer;
   display: flex;
   align-items: center;
