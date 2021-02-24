@@ -10,11 +10,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://exchange.pancakeswap.finance",
+        href: "https://exchange.milkswap.app",
       },
       {
         label: "Liquidity",
-        href: "https://exchange.pancakeswap.finance/#/pool",
+        href: "https://exchange.milkswap.app/#/pool",
       },
     ],
   },
@@ -94,20 +94,12 @@ export const links = [
     icon: "MoreIcon",
     items: [
       {
-        label: "Voting",
-        href: "https://voting.pancakeswap.finance",
-      },
-      {
         label: "Github",
-        href: "https://github.com/pancakeswap",
-      },
-      {
-        label: "Docs",
-        href: "https://docs.pancakeswap.finance",
+        href: "https://github.com/milkswap",
       },
       {
         label: "Blog",
-        href: "https://pancakeswap.medium.com",
+        href: "https://milk-swap.medium.com/",
       },
     ],
   },
@@ -120,14 +112,14 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/pancakeswap",
+        href: "https://t.me/milkswap_bsc",
       },
     ],
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/pancakeswap",
+    href: "https://twitter.com/milkswap_bsc",
   },
 ];
 

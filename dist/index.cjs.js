@@ -2106,11 +2106,11 @@ var links = [
         items: [
             {
                 label: "Exchange",
-                href: "https://exchange.pancakeswap.finance",
+                href: "https://exchange.milkswap.app",
             },
             {
                 label: "Liquidity",
-                href: "https://exchange.pancakeswap.finance/#/pool",
+                href: "https://exchange.milkswap.app/#/pool",
             },
         ],
     },
@@ -2190,20 +2190,12 @@ var links = [
         icon: "MoreIcon",
         items: [
             {
-                label: "Voting",
-                href: "https://voting.pancakeswap.finance",
-            },
-            {
                 label: "Github",
-                href: "https://github.com/pancakeswap",
-            },
-            {
-                label: "Docs",
-                href: "https://docs.pancakeswap.finance",
+                href: "https://github.com/milkswap",
             },
             {
                 label: "Blog",
-                href: "https://pancakeswap.medium.com",
+                href: "https://milk-swap.medium.com/",
             },
         ],
     },
@@ -2215,14 +2207,14 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "https://t.me/pancakeswap",
+                href: "https://t.me/milkswap_bsc",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/pancakeswap",
+        href: "https://twitter.com/milkswap_bsc",
     },
 ];
 var MENU_HEIGHT = 64;
