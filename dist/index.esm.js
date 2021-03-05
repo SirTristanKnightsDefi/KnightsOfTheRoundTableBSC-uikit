@@ -2073,11 +2073,11 @@ var Logo$1 = function (_a) {
     var isAbsoluteUrl = href.startsWith("http");
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$N, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$M, { width: "24px", color: "textSubtle" }))),
-        isAbsoluteUrl ? (React.createElement(StyledLink$1, { as: "a", href: href, "aria-label": "MilkSwap home page" },
-            React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "Milkswap Logo", className: "mobile-icon" }),
-            React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/knightsdefi_logo.png?raw=true", alt: "Milkswap Logo", className: "desktop-icon" }))) : (React.createElement(StyledLink$1, { to: href, "aria-label": "MilkSwap home page" },
-            React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "Milkswap Logo", className: "mobile-icon" }),
-            React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/knightsdefi_logo.png?raw=true", alt: "Milkswap Logo", className: "desktop-icon" })))));
+        isAbsoluteUrl ? (React.createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Knights DeFi home page" },
+            React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "Knights DeFi Logo", className: "mobile-icon" }),
+            React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knightsdefi_logo.png?raw=true", alt: "Knights DeFi Logo", className: "desktop-icon" }))) : (React.createElement(StyledLink$1, { to: href, "aria-label": "Knights DeFi home page" },
+            React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "Knights DeFi Logo", className: "mobile-icon" }),
+            React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knightsdefi_logo.png?raw=true", alt: "Knights DeFi Logo", className: "desktop-icon" })))));
 };
 var templateObject_1$y;
 
@@ -2093,11 +2093,11 @@ var links = [
         items: [
             {
                 label: "Exchange",
-                href: "https://exchange.milkswap.app",
+                href: "https://exchange.Knights DeFi.app",
             },
             {
                 label: "Liquidity",
-                href: "https://exchange.milkswap.app/#/pool",
+                href: "https://exchange.Knights DeFi.app/#/pool",
             },
         ],
     },
@@ -2178,11 +2178,11 @@ var links = [
         items: [
             {
                 label: "Github",
-                href: "https://github.com/milkswap",
+                href: "https://github.com/Knights DeFi",
             },
             {
                 label: "Blog",
-                href: "https://milk-swap.medium.com/",
+                href: "https://knightsoftheroundtable-bsc.medium.com/",
             },
         ],
     },
@@ -2194,14 +2194,14 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "https://t.me/milkswap_bsc",
+                href: "https://t.me/Knights DeFi_bsc",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/milkswap_bsc",
+        href: "https://twitter.com/Knights DeFi_bsc",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2327,7 +2327,7 @@ var PanelFooter = function (_a) {
     return (React.createElement(Container$4, null,
         React.createElement(SocialEntry, null,
             cakePriceUsd ? (React.createElement(PriceLink, { href: "https://pancakeswap.info/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82", target: "_blank" },
-                React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.png?raw=true", alt: "Milkswap Logo", style: {
+                React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.png?raw=true", alt: "Knights DeFi Logo", style: {
                         width: "24px",
                         marginRight: "8px",
                     } }),
