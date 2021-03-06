@@ -2075,9 +2075,9 @@ var Logo = function (_a) {
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$j, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$k, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", href: href, "aria-label": "Knights DeFi home page" },
             React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "Knights DeFi Logo", className: "mobile-icon" }),
-            React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knightsdefi_logo.png?raw=true", alt: "Knights DeFi Logo", className: "desktop-icon" }))) : (React.createElement(StyledLink, { to: href, "aria-label": "Knights DeFi home page" },
+            React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/banner.svg?raw=true", alt: "Knights DeFi Logo", className: "desktop-icon" }))) : (React.createElement(StyledLink, { to: href, "aria-label": "Knights DeFi home page" },
             React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "Knights DeFi Logo", className: "mobile-icon" }),
-            React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knightsdefi_logo.png?raw=true", alt: "Knights DeFi Logo", className: "desktop-icon" })))));
+            React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/banner.svg?raw=true", alt: "Knights DeFi Logo", className: "desktop-icon" })))));
 };
 var templateObject_1$b;
 

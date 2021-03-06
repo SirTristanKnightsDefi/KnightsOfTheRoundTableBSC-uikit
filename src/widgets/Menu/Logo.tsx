@@ -50,7 +50,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
             className="mobile-icon"
           />
           <img
-            src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knightsdefi_logo.png?raw=true"
+            src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/banner.svg?raw=true"
             alt="Knights DeFi Logo"
             className="desktop-icon"
           />
@@ -63,7 +63,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
             className="mobile-icon"
           />
           <img
-            src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knightsdefi_logo.png?raw=true"
+            src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/banner.svg?raw=true"
             alt="Knights DeFi Logo"
             className="desktop-icon"
           />

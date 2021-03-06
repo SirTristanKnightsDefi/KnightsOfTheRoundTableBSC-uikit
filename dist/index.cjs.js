@@ -2088,9 +2088,9 @@ var Logo = function (_a) {
         React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$j, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$k, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React__default['default'].createElement(StyledLink, { as: "a", href: href, "aria-label": "Knights DeFi home page" },
             React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "Knights DeFi Logo", className: "mobile-icon" }),
-            React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knightsdefi_logo.png?raw=true", alt: "Knights DeFi Logo", className: "desktop-icon" }))) : (React__default['default'].createElement(StyledLink, { to: href, "aria-label": "Knights DeFi home page" },
+            React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/banner.svg?raw=true", alt: "Knights DeFi Logo", className: "desktop-icon" }))) : (React__default['default'].createElement(StyledLink, { to: href, "aria-label": "Knights DeFi home page" },
             React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "Knights DeFi Logo", className: "mobile-icon" }),
-            React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knightsdefi_logo.png?raw=true", alt: "Knights DeFi Logo", className: "desktop-icon" })))));
+            React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/banner.svg?raw=true", alt: "Knights DeFi Logo", className: "desktop-icon" })))));
 };
 var templateObject_1$b;
 
