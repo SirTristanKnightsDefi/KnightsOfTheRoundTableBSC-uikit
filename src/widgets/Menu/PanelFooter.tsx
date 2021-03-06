@@ -58,7 +58,7 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd }) => {
     <Container>
       <SocialEntry>
         {cakePriceUsd ? (
-          <PriceLink href="https://pancakeswap.info/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82" target="_blank">
+          <PriceLink href="https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30" target="_blank">
             <img
               src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.png?raw=true"
               alt="Knights DeFi Logo"
