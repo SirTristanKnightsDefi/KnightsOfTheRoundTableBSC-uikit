@@ -10,11 +10,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://exchange.Knights DeFi.app",
+        href: "https://exchange.pancakeswap.finance",
       },
       {
         label: "Liquidity",
-        href: "https://exchange.Knights DeFi.app/#/pool",
+        href: "https://exchange.pancakeswap.finance/#/pool",
       },
     ],
   },
@@ -95,7 +95,7 @@ export const links = [
     items: [
       {
         label: "Github",
-        href: "https://github.com/Knights DeFi",
+        href: "https://github.com/KnightsDeFi",
       },
       {
         label: "Blog",
@@ -112,14 +112,14 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/Knights DeFi_bsc",
+        href: "https://t.me/KnightsOfTheRoundBSCChat",
       },
     ],
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/Knights DeFi_bsc",
+    href: "https://twitter.com/Knightsbsc",
   },
 ];
 
