@@ -2349,7 +2349,7 @@ var PanelFooter = function (_a) {
                         width: "24px",
                         marginRight: "8px",
                     } }))),
-            React__default['default'].createElement(Text, null, '\n'),
+            React__default['default'].createElement(Text, null, "\n"),
             tablePriceUsd ? (React__default['default'].createElement(PriceLink, { href: "https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30", target: "_blank" },
                 React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true", alt: "Knights DeFi Logo", style: {
                         width: "24px",

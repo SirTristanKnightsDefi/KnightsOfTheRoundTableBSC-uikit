@@ -82,7 +82,7 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd, tablePr
             />
           </Skeleton>
         )}
-        <Text>{'\n'}</Text>
+        <Text>{"\n"}</Text>
         {tablePriceUsd ? (
           <PriceLink href="https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30" target="_blank">
             <img
