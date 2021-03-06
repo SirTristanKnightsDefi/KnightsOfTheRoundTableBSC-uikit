@@ -71,7 +71,7 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd }) => {
             <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
         ) : (
-          <Skeleton width={80} height={24} />
+          <Skeleton width={80} height={24}>
           <img
               src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.png?raw=true"
               alt="Knights DeFi Logo"
@@ -80,6 +80,7 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd }) => {
                 marginRight: "8px",
               }}
             />
+          </Skeleton>
         )}
         <Flex>
           {socials.map((social, index) => {
