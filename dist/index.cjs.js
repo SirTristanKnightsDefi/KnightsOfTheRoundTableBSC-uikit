@@ -2106,11 +2106,11 @@ var links = [
         items: [
             {
                 label: "Exchange",
-                href: "https://exchange.Knights DeFi.app",
+                href: "https://exchange.pancakeswap.finance",
             },
             {
                 label: "Liquidity",
-                href: "https://exchange.Knights DeFi.app/#/pool",
+                href: "https://exchange.pancakeswap.finance/#/pool",
             },
         ],
     },
@@ -2191,7 +2191,7 @@ var links = [
         items: [
             {
                 label: "Github",
-                href: "https://github.com/Knights DeFi",
+                href: "https://github.com/KnightsDeFi",
             },
             {
                 label: "Blog",
@@ -2207,14 +2207,14 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "https://t.me/Knights DeFi_bsc",
+                href: "https://t.me/KnightsOfTheRoundBSCChat",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/Knights DeFi_bsc",
+        href: "https://twitter.com/Knightsbsc",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2339,7 +2339,7 @@ var PanelFooter = function (_a) {
     }
     return (React__default['default'].createElement(Container, null,
         React__default['default'].createElement(SocialEntry, null,
-            cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: "https://pancakeswap.info/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82", target: "_blank" },
+            cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: "https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30", target: "_blank" },
                 React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.png?raw=true", alt: "Knights DeFi Logo", style: {
                         width: "24px",
                         marginRight: "8px",
