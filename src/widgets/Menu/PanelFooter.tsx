@@ -43,7 +43,7 @@ const SocialEntry = styled.div`
   padding: 0 16px;
 `;
 
-const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd }) => {
+const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd, tablePriceUsd }) => {
   if (!isPushed) {
     return (
       <Container>
@@ -60,7 +60,7 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd }) => {
         {cakePriceUsd ? (
           <PriceLink href="https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30" target="_blank">
             <img
-              src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.png?raw=true"
+              src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true"
               alt="Knights DeFi Logo"
               style={{
                 width: "24px",
@@ -73,7 +73,32 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd }) => {
         ) : (
           <Skeleton width={80} height={24}>
           <img
-              src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.png?raw=true"
+              src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true"
+              alt="Knights DeFi Logo"
+              style={{
+                width: "24px",
+                marginRight: "8px",
+              }}
+            />
+          </Skeleton>
+        )}
+        {tablePriceUsd ? (
+          <PriceLink href="https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30" target="_blank">
+            <img
+              src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true"
+              alt="Knights DeFi Logo"
+              style={{
+                width: "24px",
+                marginRight: "8px",
+              }}
+            />
+
+            <Text color="textSubtle" bold>{`$${tablePriceUsd.toFixed(3)}`}</Text>
+          </PriceLink>
+        ) : (
+          <Skeleton width={80} height={24}>
+          <img
+              src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true"
               alt="Knights DeFi Logo"
               style={{
                 width: "24px",
