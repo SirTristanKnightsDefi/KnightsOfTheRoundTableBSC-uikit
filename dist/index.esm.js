@@ -2318,24 +2318,34 @@ var Container = styled.div(templateObject_1$7 || (templateObject_1$7 = __makeTem
 var PriceLink = styled.a(templateObject_2$2 || (templateObject_2$2 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var SocialEntry = styled.div(templateObject_3$1 || (templateObject_3$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
-    var isPushed = _a.isPushed, pushNav = _a.pushNav, cakePriceUsd = _a.cakePriceUsd; _a.tablePriceUsd;
+    var isPushed = _a.isPushed, pushNav = _a.pushNav, cakePriceUsd = _a.cakePriceUsd, tablePriceUsd = _a.tablePriceUsd;
     if (!isPushed) {
         return (React.createElement(Container, null,
             React.createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
                 React.createElement(Icon$L, null))));
     }
     return (React.createElement(Container, null,
+        React.createElement(SocialEntry, null, cakePriceUsd ? (React.createElement(PriceLink, { href: "https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30", target: "_blank" },
+            React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true", alt: "Knights DeFi Logo", style: {
+                    width: "24px",
+                    marginRight: "8px",
+                } }),
+            React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 },
+            React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true", alt: "Knights DeFi Logo", style: {
+                    width: "24px",
+                    marginRight: "8px",
+                } })))),
+        React.createElement(SocialEntry, null, tablePriceUsd ? (React.createElement(PriceLink, { href: "https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30", target: "_blank" },
+            React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true", alt: "Knights DeFi Logo", style: {
+                    width: "24px",
+                    marginRight: "8px",
+                } }),
+            React.createElement(Text, { color: "textSubtle", bold: true }, "$" + tablePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 },
+            React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true", alt: "Knights DeFi Logo", style: {
+                    width: "24px",
+                    marginRight: "8px",
+                } })))),
         React.createElement(SocialEntry, null,
-            cakePriceUsd ? (React.createElement(PriceLink, { href: "https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30", target: "_blank" },
-                React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true", alt: "Knights DeFi Logo", style: {
-                        width: "24px",
-                        marginRight: "8px",
-                    } }),
-                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 },
-                React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true", alt: "Knights DeFi Logo", style: {
-                        width: "24px",
-                        marginRight: "8px",
-                    } }))),
             React.createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons[social.icon];
                 var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
