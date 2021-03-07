@@ -73,6 +73,8 @@
     "@rollup/plugin-image": "^2.0.6",
     "@types/lodash": "^4.14.162",
     "@types/styled-system": "^5.1.10",
+    "global": "^4.4.0",
+    "http-server": "^0.12.3",
     "lodash": "^4.17.20",
     "react-transition-group": "^4.4.1",
     "styled-system": "^5.1.5"
