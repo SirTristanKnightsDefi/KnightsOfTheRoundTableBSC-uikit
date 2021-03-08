@@ -36,6 +36,14 @@ const PriceLink = styled.a`
   }
 `;
 
+const SettingsEntry = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: ${MENU_ENTRY_HEIGHT}px;
+  padding: 0 8px;
+`;
+
 const SocialEntry = styled.div`
   display: flex;
   align-items: center;
@@ -44,7 +52,7 @@ const SocialEntry = styled.div`
   padding: 0 16px;
 `;
 
-const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd, tablePriceUsd }) => {
+const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, cakePriceUsd, tablePriceUsd }) => {
   if (!isPushed) {
     return (
       <Container>
