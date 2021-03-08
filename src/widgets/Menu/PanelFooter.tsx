@@ -85,10 +85,10 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd, tablePr
       </SocialEntry>
       <SocialEntry>
         {tablePriceUsd ? (
-          <PriceLink href="https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30" target="_blank">
+          <PriceLink href="https://pancakeswap.info/token/0xf5a2f7418035ce76967f515f39d65719bb0453b6" target="_blank">
             <img
               src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true"
-              alt="Knights DeFi Logo"
+              alt="Table Logo"
               style={{
                 width: "24px",
                 marginRight: "8px",
@@ -100,7 +100,7 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd, tablePr
           <Skeleton width={80} height={24}>
           <img
               src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true"
-              alt="Knights DeFi Logo"
+              alt="Table Logo"
               style={{
                 width: "24px",
                 marginRight: "8px",
