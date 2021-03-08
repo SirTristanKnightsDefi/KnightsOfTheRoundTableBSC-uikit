@@ -7,6 +7,7 @@ import Dropdown from "../../components/Dropdown/Dropdown";
 import Link from "../../components/Link/Link";
 import Skeleton from "../../components/Skeleton/Skeleton";
 import IconButton from "../../components/Button/IconButton";
+import ThemeSwitcher from "./ThemeSwitcher";
 import * as IconModule from "./icons";
 import { socials, MENU_ENTRY_HEIGHT } from "./config";
 import { PanelProps, PushedProps } from "./types";
@@ -134,6 +135,9 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd, tablePr
           })}
         </Flex>
       </SocialEntry>
+      <SettingsEntry>
+        <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
+      </SettingsEntry>
     </Container>
   );
 };
