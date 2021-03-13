@@ -52,7 +52,7 @@ const SocialEntry = styled.div`
   padding: 0 16px;
 `;
 
-const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, cakePriceUsd, tablePriceUsd }) => {
+const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, cakePriceUsd, tablePriceUsd, legendPriceUsd }) => {
   if (!isPushed) {
     return (
       <Container>
@@ -109,6 +109,32 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
           <Skeleton width={80} height={24}>
           <img
               src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true"
+              alt="Table Logo"
+              style={{
+                width: "24px",
+                marginRight: "8px",
+              }}
+            />
+          </Skeleton>
+        )}
+      </SocialEntry>
+      <SocialEntry>
+        {legendPriceUsd ? (
+          <PriceLink href="https://pancakeswap.info/token/0xf5a2f7418035ce76967f515f39d65719bb0453b6" target="_blank">
+            <img
+              src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/legend.png?raw=true"
+              alt="Table Logo"
+              style={{
+                width: "24px",
+                marginRight: "8px",
+              }}
+            />
+            <Text color="textSubtle" bold>{`$${legendPriceUsd.toFixed(3)}`}</Text>
+          </PriceLink>
+        ) : (
+          <Skeleton width={80} height={24}>
+          <img
+              src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/legend.png?raw=true"
               alt="Table Logo"
               style={{
                 width: "24px",

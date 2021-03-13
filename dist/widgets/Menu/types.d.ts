@@ -37,6 +37,7 @@ export interface PanelProps {
     cakePriceUsd?: number;
     currentLang: string;
     tablePriceUsd?: number;
+    legendPriceUsd?: number;
     langs: LangType[];
     setLang: (lang: LangType) => void;
     links: Array<MenuEntry>;
