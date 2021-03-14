@@ -2367,7 +2367,7 @@ var PanelFooter = function (_a) {
                     width: "24px",
                     marginRight: "8px",
                 } })))),
-        React.createElement(SocialEntry, null, legendPriceUsd ? (React.createElement(PriceLink, { href: "https://pancakeswap.info/token/0xf5a2f7418035ce76967f515f39d65719bb0453b6", target: "_blank" },
+        React.createElement(SocialEntry, null, legendPriceUsd ? (React.createElement(PriceLink, { href: "https://pancakeswap.info/token/0xDc661984735b535210CB1f52f86cc58616024192", target: "_blank" },
             React.createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/legend.png?raw=true", alt: "Table Logo", style: {
                     width: "24px",
                     marginRight: "8px",
