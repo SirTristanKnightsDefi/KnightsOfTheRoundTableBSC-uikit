@@ -45,12 +45,12 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       {isAbsoluteUrl ? (
         <StyledLink as="a" href={href} aria-label="Knights DeFi home page">
           <img
-            src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true"
+            src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true"
             alt="Knights DeFi Logo"
             className="mobile-icon"
           />
           <img
-            src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/banner.svg?raw=true"
+            src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/banner.svg?raw=true"
             alt="Knights DeFi Logo"
             className="desktop-icon"
           />
@@ -58,12 +58,12 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       ) : (
         <StyledLink to={href} aria-label="Knights DeFi home page">
           <img
-            src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true"
+            src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true"
             alt="Knights DeFi Logo"
             className="mobile-icon"
           />
           <img
-            src="https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/banner.svg?raw=true"
+            src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/banner.svg?raw=true"
             alt="Knights DeFi Logo"
             className="desktop-icon"
           />

@@ -2108,10 +2108,10 @@ var Logo = function (_a) {
     return (React__default['default'].createElement(Flex, null,
         React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$l, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$m, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React__default['default'].createElement(StyledLink, { as: "a", href: href, "aria-label": "Knights DeFi home page" },
-            React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "Knights DeFi Logo", className: "mobile-icon" }),
-            React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/banner.svg?raw=true", alt: "Knights DeFi Logo", className: "desktop-icon" }))) : (React__default['default'].createElement(StyledLink, { to: href, "aria-label": "Knights DeFi home page" },
-            React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "Knights DeFi Logo", className: "mobile-icon" }),
-            React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/banner.svg?raw=true", alt: "Knights DeFi Logo", className: "desktop-icon" })))));
+            React__default['default'].createElement("img", { src: "https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "Knights DeFi Logo", className: "mobile-icon" }),
+            React__default['default'].createElement("img", { src: "https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/banner.svg?raw=true", alt: "Knights DeFi Logo", className: "desktop-icon" }))) : (React__default['default'].createElement(StyledLink, { to: href, "aria-label": "Knights DeFi home page" },
+            React__default['default'].createElement("img", { src: "https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "Knights DeFi Logo", className: "mobile-icon" }),
+            React__default['default'].createElement("img", { src: "https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/banner.svg?raw=true", alt: "Knights DeFi Logo", className: "desktop-icon" })))));
 };
 var templateObject_1$b;
 
@@ -2361,32 +2361,32 @@ var PanelFooter = function (_a) {
     }
     return (React__default['default'].createElement(Container, null,
         React__default['default'].createElement(SocialEntry, null, cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: "https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30", target: "_blank" },
-            React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true", alt: "Knights DeFi Logo", style: {
+            React__default['default'].createElement("img", { src: "https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true", alt: "Knights DeFi Logo", style: {
                     width: "24px",
                     marginRight: "8px",
                 } }),
             React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 },
-            React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true", alt: "Knights DeFi Logo", style: {
+            React__default['default'].createElement("img", { src: "https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true", alt: "Knights DeFi Logo", style: {
                     width: "24px",
                     marginRight: "8px",
                 } })))),
         React__default['default'].createElement(SocialEntry, null, tablePriceUsd ? (React__default['default'].createElement(PriceLink, { href: "https://pancakeswap.info/token/0xf5a2f7418035ce76967f515f39d65719bb0453b6", target: "_blank" },
-            React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true", alt: "Table Logo", style: {
+            React__default['default'].createElement("img", { src: "https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true", alt: "Table Logo", style: {
                     width: "24px",
                     marginRight: "8px",
                 } }),
             React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + tablePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 },
-            React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true", alt: "Table Logo", style: {
+            React__default['default'].createElement("img", { src: "https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true", alt: "Table Logo", style: {
                     width: "24px",
                     marginRight: "8px",
                 } })))),
         React__default['default'].createElement(SocialEntry, null, legendPriceUsd ? (React__default['default'].createElement(PriceLink, { href: "https://pancakeswap.info/token/0xDc661984735b535210CB1f52f86cc58616024192", target: "_blank" },
-            React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/legend.png?raw=true", alt: "Table Logo", style: {
+            React__default['default'].createElement("img", { src: "https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/legend.png?raw=true", alt: "Table Logo", style: {
                     width: "24px",
                     marginRight: "8px",
                 } }),
             React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + legendPriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 },
-            React__default['default'].createElement("img", { src: "https://github.com/Huwonk/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/legend.png?raw=true", alt: "Table Logo", style: {
+            React__default['default'].createElement("img", { src: "https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/legend.png?raw=true", alt: "Table Logo", style: {
                     width: "24px",
                     marginRight: "8px",
                 } })))),
