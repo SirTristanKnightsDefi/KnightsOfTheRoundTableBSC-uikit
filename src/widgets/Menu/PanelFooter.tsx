@@ -67,10 +67,10 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
     <Container>
       <SocialEntry>
         {squirePriceUsd ? (
-          <PriceLink href="https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30" target="_blank">
+          <PriceLink href="https://pancakeswap.info/token/0x2F0D21f1B84F03fB9D60004fc206C86Be6902a32" target="_blank">
             <img
-              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true"
-              alt="Knights DeFi Logo"
+              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/squire.png?raw=true"
+              alt="SQUIRE Logo"
               style={{
                 width: "24px",
                 marginRight: "8px",
@@ -82,8 +82,8 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
         ) : (
           <Skeleton width={80} height={24}>
           <img
-              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true"
-              alt="Knights DeFi Logo"
+              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/squire.png?raw=true"
+              alt="SQUIRE Logo"
               style={{
                 width: "24px",
                 marginRight: "8px",
@@ -97,7 +97,7 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
           <PriceLink href="https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30" target="_blank">
             <img
               src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true"
-              alt="Knights DeFi Logo"
+              alt="KNIGHT Logo"
               style={{
                 width: "24px",
                 marginRight: "8px",
@@ -110,7 +110,7 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
           <Skeleton width={80} height={24}>
           <img
               src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true"
-              alt="Knights DeFi Logo"
+              alt="KNIGHT Logo"
               style={{
                 width: "24px",
                 marginRight: "8px",
@@ -124,7 +124,7 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
           <PriceLink href="https://pancakeswap.info/token/0xDc661984735b535210CB1f52f86cc58616024192" target="_blank">
             <img
               src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/legend.png?raw=true"
-              alt="Table Logo"
+              alt="LEGEND Logo"
               style={{
                 width: "24px",
                 marginRight: "8px",
@@ -136,7 +136,7 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
           <Skeleton width={80} height={24}>
           <img
               src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/legend.png?raw=true"
-              alt="Table Logo"
+              alt="TLEGEND Logo"
               style={{
                 width: "24px",
                 marginRight: "8px",
@@ -150,7 +150,7 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
           <PriceLink href="https://pancakeswap.info/token/0xf5a2f7418035ce76967f515f39d65719bb0453b6" target="_blank">
             <img
               src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true"
-              alt="Table Logo"
+              alt="TABLE Logo"
               style={{
                 width: "24px",
                 marginRight: "8px",
@@ -162,7 +162,7 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
           <Skeleton width={80} height={24}>
           <img
               src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true"
-              alt="Table Logo"
+              alt="TABLE Logo"
               style={{
                 width: "24px",
                 marginRight: "8px",
