@@ -52,7 +52,7 @@ const SocialEntry = styled.div`
   padding: 0 16px;
 `;
 
-const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, cakePriceUsd, tablePriceUsd, legendPriceUsd }) => {
+const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, cakePriceUsd, tablePriceUsd, legendPriceUsd, squirePriceUsd }) => {
   if (!isPushed) {
     return (
       <Container>
@@ -65,6 +65,33 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
 
   return (
     <Container>
+      <SocialEntry>
+        {squirePriceUsd ? (
+          <PriceLink href="https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30" target="_blank">
+            <img
+              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true"
+              alt="Knights DeFi Logo"
+              style={{
+                width: "24px",
+                marginRight: "8px",
+              }}
+            />
+
+            <Text color="textSubtle" bold>{`$${squirePriceUsd.toFixed(3)}`}</Text>
+          </PriceLink>
+        ) : (
+          <Skeleton width={80} height={24}>
+          <img
+              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true"
+              alt="Knights DeFi Logo"
+              style={{
+                width: "24px",
+                marginRight: "8px",
+              }}
+            />
+          </Skeleton>
+        )}
+      </SocialEntry>
       <SocialEntry>
         {cakePriceUsd ? (
           <PriceLink href="https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30" target="_blank">
@@ -84,32 +111,6 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
           <img
               src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true"
               alt="Knights DeFi Logo"
-              style={{
-                width: "24px",
-                marginRight: "8px",
-              }}
-            />
-          </Skeleton>
-        )}
-      </SocialEntry>
-      <SocialEntry>
-        {tablePriceUsd ? (
-          <PriceLink href="https://pancakeswap.info/token/0xf5a2f7418035ce76967f515f39d65719bb0453b6" target="_blank">
-            <img
-              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true"
-              alt="Table Logo"
-              style={{
-                width: "24px",
-                marginRight: "8px",
-              }}
-            />
-            <Text color="textSubtle" bold>{`$${tablePriceUsd.toFixed(3)}`}</Text>
-          </PriceLink>
-        ) : (
-          <Skeleton width={80} height={24}>
-          <img
-              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true"
-              alt="Table Logo"
               style={{
                 width: "24px",
                 marginRight: "8px",
@@ -144,6 +145,33 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
           </Skeleton>
         )}
       </SocialEntry>
+      <SocialEntry>
+        {tablePriceUsd ? (
+          <PriceLink href="https://pancakeswap.info/token/0xf5a2f7418035ce76967f515f39d65719bb0453b6" target="_blank">
+            <img
+              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true"
+              alt="Table Logo"
+              style={{
+                width: "24px",
+                marginRight: "8px",
+              }}
+            />
+            <Text color="textSubtle" bold>{`$${tablePriceUsd.toFixed(3)}`}</Text>
+          </PriceLink>
+        ) : (
+          <Skeleton width={80} height={24}>
+          <img
+              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true"
+              alt="Table Logo"
+              style={{
+                width: "24px",
+                marginRight: "8px",
+              }}
+            />
+          </Skeleton>
+        )}
+      </SocialEntry>
+      
       <SocialEntry>
         <Flex>
           {socials.map((social, index) => {

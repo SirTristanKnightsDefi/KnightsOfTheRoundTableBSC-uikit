@@ -72,6 +72,7 @@ const Menu: React.FC<NavProps> = ({
   cakePriceUsd,
   tablePriceUsd,
   legendPriceUsd,
+  squirePriceUsd,
   links,
   children,
 }) => {
@@ -139,6 +140,7 @@ const Menu: React.FC<NavProps> = ({
           cakePriceUsd={cakePriceUsd}
           tablePriceUsd={tablePriceUsd}
           legendPriceUsd={legendPriceUsd}
+          squirePriceUsd={squirePriceUsd}
           pushNav={setIsPushed}
           links={links}
         />
