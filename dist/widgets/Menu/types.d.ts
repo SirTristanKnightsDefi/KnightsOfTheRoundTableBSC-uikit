@@ -38,6 +38,7 @@ export interface PanelProps {
     currentLang: string;
     tablePriceUsd?: number;
     legendPriceUsd?: number;
+    squirePriceUsd?: number;
     langs: LangType[];
     setLang: (lang: LangType) => void;
     links: Array<MenuEntry>;
