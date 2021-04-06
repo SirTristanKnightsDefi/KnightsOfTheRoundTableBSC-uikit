@@ -2454,7 +2454,8 @@ var PanelFooter = function (_a) {
                 }
                 return (React__default['default'].createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
                     React__default['default'].createElement(Icon, __assign({}, iconProps))));
-            })),
+            }))),
+        React__default['default'].createElement(Flex$1, null,
             React__default['default'].createElement(SettingsEntry, null,
                 React__default['default'].createElement(ThemeSwitcher$1, { isDark: isDark, toggleTheme: toggleTheme })))));
 };

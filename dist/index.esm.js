@@ -2441,7 +2441,8 @@ var PanelFooter = function (_a) {
                 }
                 return (React.createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
                     React.createElement(Icon, __assign({}, iconProps))));
-            })),
+            }))),
+        React.createElement(Flex$1, null,
             React.createElement(SettingsEntry, null,
                 React.createElement(ThemeSwitcher$1, { isDark: isDark, toggleTheme: toggleTheme })))));
 };
