@@ -195,11 +195,13 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
               </Link>
             );
           })}
+        </Flex>        
+        </SocialEntry>
+        <Flex>
+        <SettingsEntry>
+          <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
+        </SettingsEntry>
         </Flex>
-		  <SettingsEntry>
-		  <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
-			</SettingsEntry>
-      </SocialEntry>
 
     </Container>
   );
