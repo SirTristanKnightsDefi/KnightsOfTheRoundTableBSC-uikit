@@ -7,14 +7,15 @@ import Dropdown from "../../components/Dropdown/Dropdown";
 import Link from "../../components/Link/Link";
 import Skeleton from "../../components/Skeleton/Skeleton";
 import IconButton from "../../components/Button/IconButton";
-import ThemeSwitcher from "./ThemeSwitcher";
 import * as IconModule from "./icons";
 import { socials, MENU_ENTRY_HEIGHT } from "./config";
 import { PanelProps, PushedProps } from "./types";
+import Button from "../../components/Button/Button";
 
 interface Props extends PanelProps, PushedProps {}
 
 const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
+const { MoonIcon, SunIcon } = Icons;
 
 const Container = styled.div`
   flex: none;
@@ -197,11 +198,18 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
           })}
         </Flex>        
         </SocialEntry>
-        <Flex>
         <SettingsEntry>
-          <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
+        <Button variant="text" onClick={() => toggleTheme(!isDark)}>
+          {/* alignItems center is a Safari fix */}
+          <Flex alignItems="center">
+            <SunIcon color={isDark ? "textDisabled" : "text"} width="24px" />
+            <Text color="textDisabled" mx="4px">
+              /
+            </Text>
+            <MoonIcon color={isDark ? "text" : "textDisabled"} width="24px" />
+          </Flex>
+        </Button>
         </SettingsEntry>
-        </Flex>
 
     </Container>
   );
