@@ -2565,6 +2565,23 @@ var links = [
         ],
     },
 ];
+var socials = [
+    {
+        label: "Telegram",
+        icon: "TelegramIcon",
+        items: [
+            {
+                label: "English",
+                href: "https://t.me/KnightsOfTheRoundBSCChat",
+            },
+        ],
+    },
+    {
+        label: "Twitter",
+        icon: "TwitterIcon",
+        href: "https://twitter.com/Knightsbsc",
+    },
+];
 var MENU_HEIGHT = 64;
 var MENU_ENTRY_HEIGHT = 48;
 var SIDEBAR_WIDTH_FULL = 240;
@@ -2647,7 +2664,7 @@ var MenuLink = function (_a) {
     return React__default['default'].createElement(Tag, __assign({}, props, otherProps));
 };
 
-var Icons$1 = IconModule;
+var Icons$2 = IconModule;
 var Container$1 = styled__default['default'].div(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n"], ["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n"])));
 var PanelBody = function (_a) {
     var isPushed = _a.isPushed, pushNav = _a.pushNav, isMobile = _a.isMobile, links = _a.links;
@@ -2655,7 +2672,7 @@ var PanelBody = function (_a) {
     // Close the menu when a user clicks a link on mobile
     var handleClick = isMobile ? function () { return pushNav(false); } : undefined;
     return (React__default['default'].createElement(Container$1, null, links.map(function (entry) {
-        var Icon = Icons$1[entry.icon];
+        var Icon = Icons$2[entry.icon];
         var iconElement = React__default['default'].createElement(Icon, { width: "24px", mr: "8px" });
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (entry.items) {
@@ -2673,8 +2690,8 @@ var PanelBody = function (_a) {
 };
 var templateObject_1$9;
 
-var Icons = IconModule;
-var MoonIcon = Icons.MoonIcon, SunIcon = Icons.SunIcon;
+var Icons$1 = IconModule;
+var MoonIcon = Icons$1.MoonIcon, SunIcon = Icons$1.SunIcon;
 var ThemeSwitcher = function (_a) {
     var isDark = _a.isDark, toggleTheme = _a.toggleTheme;
     return (React__default['default'].createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); } },
@@ -2684,6 +2701,19 @@ var ThemeSwitcher = function (_a) {
             React__default['default'].createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "24px" }))));
 };
 var ThemeSwitcher$1 = React__default['default'].memo(ThemeSwitcher, function (prev, next) { return prev.isDark === next.isDark; });
+
+var Icons = IconModule;
+var SocialLinks = function () { return (React__default['default'].createElement(Flex$1, null, socials.map(function (social, index) {
+    var Icon = Icons[social.icon];
+    var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
+    var mr = index < socials.length - 1 ? "24px" : 0;
+    if (social.items) {
+        return (React__default['default'].createElement(Dropdown, { key: social.label, position: "top", target: React__default['default'].createElement(Icon, __assign({}, iconProps, { mr: mr })) }, social.items.map(function (item) { return (React__default['default'].createElement(Link, { external: true, key: item.label, href: item.href, "aria-label": item.label, color: "textSubtle" }, item.label)); })));
+    }
+    return (React__default['default'].createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
+        React__default['default'].createElement(Icon, __assign({}, iconProps))));
+}))); };
+var SocialLinks$1 = React__default['default'].memo(SocialLinks, function () { return true; });
 
 var Container = styled__default['default'].div(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"])), function (_a) {
     var theme = _a.theme;
@@ -2741,6 +2771,7 @@ var PanelFooter = function (_a) {
                     marginRight: "8px",
                 } })))),
         React__default['default'].createElement(SettingsEntry, null,
+            React__default['default'].createElement(SocialLinks$1, null),
             React__default['default'].createElement(ThemeSwitcher$1, { isDark: isDark, toggleTheme: toggleTheme }))));
 };
 var templateObject_1$8, templateObject_2$3, templateObject_3$1, templateObject_4$1;
@@ -3184,7 +3215,7 @@ var baseColors = {
     primary: "#ccc72d",
     primaryBright: "#ccc72d",
     primaryDark: "#4e23a6",
-    secondary: "#ccc72d",
+    secondary: "#6485BA",
     success: "#15bd69",
     warning: "#fa113e",
 };
