@@ -4,6 +4,7 @@ interface Props {
     isDark: boolean;
     togglePush: () => void;
     href: string;
+    banner?: string;
 }
 declare const Logo: React.FC<Props>;
 export default Logo;

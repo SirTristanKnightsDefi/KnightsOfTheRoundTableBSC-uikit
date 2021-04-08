@@ -2426,15 +2426,21 @@ var StyledLink = styled(Link$1)(templateObject_1$c || (templateObject_1$c = __ma
     return theme.mediaQueries.nav;
 });
 var Logo = function (_a) {
-    var isPushed = _a.isPushed, togglePush = _a.togglePush; _a.isDark; var href = _a.href;
+    var isPushed = _a.isPushed, togglePush = _a.togglePush, isDark = _a.isDark, href = _a.href, banner = _a.banner;
     var isAbsoluteUrl = href.startsWith("http");
+    if (isDark) {
+        banner = 'https://ipfs.io/ipfs/QmPPZsHkYZkvtcX2jqfswTZfJgv3Ka87vKbkU8DPw9jUd4?filename=BannerDark.png';
+    }
+    else {
+        banner = 'https://ipfs.io/ipfs/QmQ63vbQ4aigaXJ9m7NyxQSAbjVB33EvLRZX98vxg7dxER?filename=BannerLight.png';
+    }
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$m, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$n, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", href: href, "aria-label": "Knights DeFi home page" },
             React.createElement("img", { src: "https://ipfs.io/ipfs/QmPDPkJHr65KxEDWEE725CuvK5ytfWXbx1fpAKiWf8PNoR?filename=logo.svg", alt: "Knights DeFi Logo", className: "mobile-icon" }),
-            React.createElement("img", { src: "https://ipfs.io/ipfs/QmPyhbCeCyRLKuEkkLKkjAT8zhK2DPaKHJ35sNH3UdzM9V?filename=banner.svg", alt: "Knights DeFi Logo", className: "desktop-icon" }))) : (React.createElement(StyledLink, { to: href, "aria-label": "Knights DeFi home page" },
+            React.createElement("img", { src: banner, alt: "Knights DeFi Logo", className: "desktop-icon" }))) : (React.createElement(StyledLink, { to: href, "aria-label": "Knights DeFi home page" },
             React.createElement("img", { src: "https://ipfs.io/ipfs/QmPDPkJHr65KxEDWEE725CuvK5ytfWXbx1fpAKiWf8PNoR?filename=logo.svg", alt: "Knights DeFi Logo", className: "mobile-icon" }),
-            React.createElement("img", { src: "https://ipfs.io/ipfs/QmPyhbCeCyRLKuEkkLKkjAT8zhK2DPaKHJ35sNH3UdzM9V?filename=banner.svg", alt: "Knights DeFi Logo", className: "desktop-icon" })))));
+            React.createElement("img", { src: banner, alt: "Knights DeFi Logo", className: "desktop-icon" })))));
 };
 var templateObject_1$c;
 

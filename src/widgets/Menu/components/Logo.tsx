@@ -10,6 +10,7 @@ interface Props {
   isDark: boolean;
   togglePush: () => void;
   href: string;
+  banner?: string;
 }
 
 const StyledLink = styled(Link)`
@@ -30,8 +31,13 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
+const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href, banner }) => {
   const isAbsoluteUrl = href.startsWith("http");
+  if(isDark){
+    banner = 'https://ipfs.io/ipfs/QmPPZsHkYZkvtcX2jqfswTZfJgv3Ka87vKbkU8DPw9jUd4?filename=BannerDark.png';
+  } else {
+    banner = 'https://ipfs.io/ipfs/QmQ63vbQ4aigaXJ9m7NyxQSAbjVB33EvLRZX98vxg7dxER?filename=BannerLight.png';
+  }
 
   return (
     <Flex>
@@ -50,7 +56,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
             className="mobile-icon"
           />
           <img
-            src="https://ipfs.io/ipfs/QmPyhbCeCyRLKuEkkLKkjAT8zhK2DPaKHJ35sNH3UdzM9V?filename=banner.svg"
+            src={banner}
             alt="Knights DeFi Logo"
             className="desktop-icon"
           />
@@ -63,7 +69,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
             className="mobile-icon"
           />
           <img
-            src="https://ipfs.io/ipfs/QmPyhbCeCyRLKuEkkLKkjAT8zhK2DPaKHJ35sNH3UdzM9V?filename=banner.svg"
+            src={banner}
             alt="Knights DeFi Logo"
             className="desktop-icon"
           />
