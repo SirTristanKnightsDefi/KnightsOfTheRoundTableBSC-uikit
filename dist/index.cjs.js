@@ -2442,10 +2442,10 @@ var Logo = function (_a) {
     var isPushed = _a.isPushed, togglePush = _a.togglePush, isDark = _a.isDark, href = _a.href, banner = _a.banner;
     var isAbsoluteUrl = href.startsWith("http");
     if (isDark) {
-        banner = 'https://ipfs.io/ipfs/QmPPZsHkYZkvtcX2jqfswTZfJgv3Ka87vKbkU8DPw9jUd4?filename=BannerDark.png';
+        banner = 'https://ipfs.io/ipfs/QmUYM97NBGqe6562xUhxCo9jFEx6nBphPpu3boMus8UHbk?filename=BannerDark.png';
     }
     else {
-        banner = 'https://ipfs.io/ipfs/QmQ63vbQ4aigaXJ9m7NyxQSAbjVB33EvLRZX98vxg7dxER?filename=BannerLight.png';
+        banner = 'https://ipfs.io/ipfs/QmXdJCD37fQFbMZ1Af5StcX89iZfGchWNTSpUt1G7seuer?filename=BannerLight.png';
     }
     return (React__default['default'].createElement(Flex, null,
         React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$m, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$n, { width: "24px", color: "textSubtle" }))),
