@@ -34,9 +34,9 @@ const StyledLink = styled(Link)`
 const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href, banner }) => {
   const isAbsoluteUrl = href.startsWith("http");
   if(isDark){
-    banner = 'https://ipfs.io/ipfs/QmUYM97NBGqe6562xUhxCo9jFEx6nBphPpu3boMus8UHbk?filename=BannerDark.png';
+    banner = 'https://ipfs.io/ipfs/QmcJg2DVfP3m4puLxcGj9hJFcfVgoQEkbKFhVUk4w6oaBW?filename=BannerDark.png';
   } else {
-    banner = 'https://ipfs.io/ipfs/QmXdJCD37fQFbMZ1Af5StcX89iZfGchWNTSpUt1G7seuer?filename=BannerLight.png';
+    banner = 'https://ipfs.io/ipfs/QmQg2ARbBTWaiFxHdTBsybTsbH8fAUA4pd7XbdvJ3mDUnP?filename=BannerLight.png';
   }
 
   return (
