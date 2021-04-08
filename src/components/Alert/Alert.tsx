@@ -7,7 +7,7 @@ import InfoIcon from "../Svg/Icons/Info";
 import { Text } from "../Text";
 import { IconButton } from "../Button";
 import { CloseIcon } from "../Svg";
-import { Flex } from "../Flex";
+import Flex from "../Box/Flex";
 import { AlertProps, variants } from "./types";
 
 interface ThemedIconLabel {
@@ -71,7 +71,7 @@ const StyledAlert = styled(Flex)`
   position: relative;
   background-color: ${({ theme }) => theme.alert.background};
   border-radius: 16px;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 4%), 0 8px 16px 0 rgb(0 0 0 / 2%), 0 0 0 1px rgb(0 0 0 / 4%);
+  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);
 `;
 
 const Alert: React.FC<AlertProps> = ({ title, children, variant, onClick }) => {
@@ -88,7 +88,7 @@ const Alert: React.FC<AlertProps> = ({ title, children, variant, onClick }) => {
       </Details>
       {onClick && (
         <CloseHandler>
-          <IconButton size="sm" variant="text" onClick={onClick}>
+          <IconButton scale="sm" variant="text" onClick={onClick}>
             <CloseIcon width="24px" color="currentColor" />
           </IconButton>
         </CloseHandler>
