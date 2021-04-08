@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { LogoIcon } from "../../../components/Svg";
-import Flex from "../../../components/Box/Flex";
-import { HamburgerIcon, HamburgerCloseIcon, LogoIcon as LogoWithText } from "../icons";
+import Flex from "../../../components/Flex/Flex";
+import { HamburgerIcon, HamburgerCloseIcon } from "../icons";
 import MenuButton from "./MenuButton";
 
 interface Props {
@@ -33,12 +32,6 @@ const StyledLink = styled(Link)`
 
 const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
-  const innerLogo = (
-    <>
-      <LogoIcon className="mobile-icon" />
-      <LogoWithText className="desktop-icon" isDark={isDark} />
-    </>
-  );
 
   return (
     <Flex>
@@ -50,16 +43,34 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
         )}
       </MenuButton>
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Pancake home page">
-          {innerLogo}
+        <StyledLink as="a" href={href} aria-label="Knights DeFi home page">
+          <img
+            src="https://ipfs.io/ipfs/QmPDPkJHr65KxEDWEE725CuvK5ytfWXbx1fpAKiWf8PNoR?filename=logo.svg"
+            alt="Knights DeFi Logo"
+            className="mobile-icon"
+          />
+          <img
+            src="https://ipfs.io/ipfs/QmPyhbCeCyRLKuEkkLKkjAT8zhK2DPaKHJ35sNH3UdzM9V?filename=banner.svg"
+            alt="Knights DeFi Logo"
+            className="desktop-icon"
+          />
         </StyledLink>
       ) : (
-        <StyledLink to={href} aria-label="Pancake home page">
-          {innerLogo}
+        <StyledLink to={href} aria-label="Knights DeFi home page">
+          <img
+            src="https://ipfs.io/ipfs/QmPDPkJHr65KxEDWEE725CuvK5ytfWXbx1fpAKiWf8PNoR?filename=logo.svg"
+            alt="Knights DeFi Logo"
+            className="mobile-icon"
+          />
+          <img
+            src="https://ipfs.io/ipfs/QmPyhbCeCyRLKuEkkLKkjAT8zhK2DPaKHJ35sNH3UdzM9V?filename=banner.svg"
+            alt="Knights DeFi Logo"
+            className="desktop-icon"
+          />
         </StyledLink>
       )}
     </Flex>
   );
 };
 
-export default React.memo(Logo, (prev, next) => prev.isPushed === next.isPushed && prev.isDark === next.isDark);
+export default Logo;
