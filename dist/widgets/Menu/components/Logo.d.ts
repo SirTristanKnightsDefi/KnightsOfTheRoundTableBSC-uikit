@@ -5,5 +5,5 @@ interface Props {
     togglePush: () => void;
     href: string;
 }
-declare const Logo: React.FC<Props>;
-export default Logo;
+declare const _default: React.NamedExoticComponent<Props>;
+export default _default;

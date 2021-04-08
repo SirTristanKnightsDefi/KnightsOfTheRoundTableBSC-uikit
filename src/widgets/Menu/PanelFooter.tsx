@@ -1,17 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import { CogIcon } from "../../../components/Svg";
-import Text from "../../../components/Text/Text";
-import IconButton from "../../../components/Button/IconButton";
-import Skeleton from "../../../components/Skeleton/Skeleton";
-import { MENU_ENTRY_HEIGHT } from "../config";
-import { PanelProps, PushedProps } from "../types";
-import CakePrice from "./CakePrice";
-import ThemeSwitcher from "./ThemeSwitcher";
-import SocialLinks from "./SocialLinks";
-import LangSelector from "./LangSelector";
+import { CogIcon, SvgProps } from "../../components/Svg";
+import Text from "../../components/Text/Text";
+import Flex from "../../components/Flex/Flex";
+import Dropdown from "../../components/Dropdown/Dropdown";
+import Link from "../../components/Link/Link";
+import Skeleton from "../../components/Skeleton/Skeleton";
+import IconButton from "../../components/Button/IconButton";
+import * as IconModule from "./icons";
+import { socials, MENU_ENTRY_HEIGHT } from "./config";
+import { PanelProps, PushedProps } from "./types";
+import Button from "../../components/Button/Button";
 
 interface Props extends PanelProps, PushedProps {}
+
+const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
+const { MoonIcon, SunIcon } = Icons;
 
 const Container = styled.div`
   flex: none;
@@ -49,19 +53,7 @@ const SocialEntry = styled.div`
   padding: 0 16px;
 `;
 
-const PanelFooter: React.FC<Props> = ({
-  isPushed,
-  pushNav,
-  toggleTheme,
-  isDark,
-  cakePriceUsd,
-  tablePriceUsd, 
-  legendPriceUsd, 
-  squirePriceUsd,
-  currentLang,
-  langs,
-  setLang,
-}) => {
+const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, cakePriceUsd, tablePriceUsd, legendPriceUsd, squirePriceUsd }) => {
   if (!isPushed) {
     return (
       <Container>
@@ -78,7 +70,7 @@ const PanelFooter: React.FC<Props> = ({
         {squirePriceUsd ? (
           <PriceLink href="https://pancakeswap.info/token/0x2F0D21f1B84F03fB9D60004fc206C86Be6902a32" target="_blank">
             <img
-              src="https://ipfs.io/ipfs/QmSMJy9D5MXrWsKDuZLrJNoxH5Rp55mSpAUzu48zFhjYfr?filename=squire.png"
+              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/squire.png?raw=true"
               alt="SQUIRE Logo"
               style={{
                 width: "24px",
@@ -91,7 +83,7 @@ const PanelFooter: React.FC<Props> = ({
         ) : (
           <Skeleton width={80} height={24}>
           <img
-              src="https://ipfs.io/ipfs/QmSMJy9D5MXrWsKDuZLrJNoxH5Rp55mSpAUzu48zFhjYfr?filename=squire.png"
+              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/squire.png?raw=true"
               alt="SQUIRE Logo"
               style={{
                 width: "24px",
@@ -105,7 +97,7 @@ const PanelFooter: React.FC<Props> = ({
         {cakePriceUsd ? (
           <PriceLink href="https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30" target="_blank">
             <img
-              src="https://ipfs.io/ipfs/QmREFZU2mdg1Sv1Q2Ma8sB63uWBN9MsJ1WULWZ1Q1vk2ND?filename=knight.png"
+              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true"
               alt="KNIGHT Logo"
               style={{
                 width: "24px",
@@ -118,7 +110,7 @@ const PanelFooter: React.FC<Props> = ({
         ) : (
           <Skeleton width={80} height={24}>
           <img
-              src="https://ipfs.io/ipfs/QmREFZU2mdg1Sv1Q2Ma8sB63uWBN9MsJ1WULWZ1Q1vk2ND?filename=knight.png"
+              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/knight.png?raw=true"
               alt="KNIGHT Logo"
               style={{
                 width: "24px",
@@ -132,7 +124,7 @@ const PanelFooter: React.FC<Props> = ({
         {legendPriceUsd ? (
           <PriceLink href="https://pancakeswap.info/token/0xDc661984735b535210CB1f52f86cc58616024192" target="_blank">
             <img
-              src="https://ipfs.io/ipfs/QmdUYMd2jcqxAauh9spWr181SN8iguonMaFszWedcuwiD9?filename=legend.png"
+              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/legend.png?raw=true"
               alt="LEGEND Logo"
               style={{
                 width: "24px",
@@ -144,8 +136,8 @@ const PanelFooter: React.FC<Props> = ({
         ) : (
           <Skeleton width={80} height={24}>
           <img
-              src="https://ipfs.io/ipfs/QmdUYMd2jcqxAauh9spWr181SN8iguonMaFszWedcuwiD9?filename=legend.png"
-              alt="LEGEND Logo"
+              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/legend.png?raw=true"
+              alt="TLEGEND Logo"
               style={{
                 width: "24px",
                 marginRight: "8px",
@@ -158,7 +150,7 @@ const PanelFooter: React.FC<Props> = ({
         {tablePriceUsd ? (
           <PriceLink href="https://pancakeswap.info/token/0xf5a2f7418035ce76967f515f39d65719bb0453b6" target="_blank">
             <img
-              src="https://ipfs.io/ipfs/QmXv83F1Qp1kv812msr2QfcHh8Uh5S1Gb1XeH5qZFS8EVV?filename=table.png"
+              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true"
               alt="TABLE Logo"
               style={{
                 width: "24px",
@@ -170,7 +162,7 @@ const PanelFooter: React.FC<Props> = ({
         ) : (
           <Skeleton width={80} height={24}>
           <img
-              src="https://ipfs.io/ipfs/QmXv83F1Qp1kv812msr2QfcHh8Uh5S1Gb1XeH5qZFS8EVV?filename=table.png"
+              src="https://github.com/SirTristanKnightsDefi/KnightsOfTheRoundTableBSC-uikit/blob/master/src/widgets/Menu/table.png?raw=true"
               alt="TABLE Logo"
               style={{
                 width: "24px",
@@ -180,10 +172,45 @@ const PanelFooter: React.FC<Props> = ({
           </Skeleton>
         )}
       </SocialEntry>
-      <SettingsEntry>
-        <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
-        <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} />
-      </SettingsEntry>
+      
+      <SocialEntry>
+        <Flex>
+          {socials.map((social, index) => {
+            const Icon = Icons[social.icon];
+            const iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
+            const mr = index < socials.length - 1 ? "24px" : 0;
+            if (social.items) {
+              return (
+                <Dropdown key={social.label} position="top" target={<Icon {...iconProps} mr={mr} />}>
+                  {social.items.map((item) => (
+                    <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
+                      {item.label}
+                    </Link>
+                  ))}
+                </Dropdown>
+              );
+            }
+            return (
+              <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
+                <Icon {...iconProps} />
+              </Link>
+            );
+          })}
+        </Flex>        
+        </SocialEntry>
+        <SettingsEntry>
+        <Button variant="text" onClick={() => toggleTheme(!isDark)}>
+          {/* alignItems center is a Safari fix */}
+          <Flex alignItems="center">
+            <SunIcon color={isDark ? "textDisabled" : "text"} width="24px" />
+            <Text color="textDisabled" mx="4px">
+              /
+            </Text>
+            <MoonIcon color={isDark ? "text" : "textDisabled"} width="24px" />
+          </Flex>
+        </Button>
+        </SettingsEntry>
+
     </Container>
   );
 };
