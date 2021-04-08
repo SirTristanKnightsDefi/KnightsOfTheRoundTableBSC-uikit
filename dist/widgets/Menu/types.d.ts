@@ -35,10 +35,10 @@ export interface PanelProps {
     isDark: boolean;
     toggleTheme: (isDark: boolean) => void;
     cakePriceUsd?: number;
-    currentLang: string;
     tablePriceUsd?: number;
     legendPriceUsd?: number;
     squirePriceUsd?: number;
+    currentLang: string;
     langs: LangType[];
     setLang: (lang: LangType) => void;
     links: Array<MenuEntry>;

@@ -1,9 +1,10 @@
-import { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "react";
-import { Link, LinkProps } from "react-router-dom";
-import { SpaceProps } from "styled-system";
-export declare const sizes: {
-    readonly SM: "sm";
+import { ComponentProps, ElementType, ReactElement, ReactNode } from "react";
+import { Link } from "react-router-dom";
+import { LayoutProps, SpaceProps } from "styled-system";
+export declare const scales: {
     readonly MD: "md";
+    readonly SM: "sm";
+    readonly XS: "xs";
 };
 export declare const variants: {
     readonly PRIMARY: "primary";
@@ -14,32 +15,25 @@ export declare const variants: {
     readonly SUBTLE: "subtle";
     readonly SUCCESS: "success";
 };
-export declare type Sizes = typeof sizes[keyof typeof sizes];
-export declare type Variants = typeof variants[keyof typeof variants];
-declare type ButtonTypes = ButtonHTMLAttributes<HTMLButtonElement> | AnchorHTMLAttributes<HTMLAnchorElement> | LinkProps;
-export declare type ButtonProps = {
-    variant?: Variants;
-    size?: Sizes;
-    startIcon?: ReactNode;
-    endIcon?: ReactNode;
-    fullWidth?: boolean;
+export declare type Scale = typeof scales[keyof typeof scales];
+export declare type Variant = typeof variants[keyof typeof variants];
+/**
+ * @see https://www.benmvp.com/blog/polymorphic-react-components-typescript/
+ */
+export declare type AsProps<E extends ElementType = ElementType> = {
+    as?: E;
+};
+export declare type MergeProps<E extends ElementType> = AsProps<E> & Omit<ComponentProps<E>, keyof AsProps>;
+export declare type PolymorphicComponentProps<E extends ElementType, P> = P & MergeProps<E>;
+export declare type PolymorphicComponent<P, D extends ElementType = "button"> = <E extends ElementType = D>(props: PolymorphicComponentProps<E, P>) => ReactElement | null;
+export interface BaseButtonProps extends LayoutProps, SpaceProps {
     as?: "a" | "button" | typeof Link;
-    href?: string;
     external?: boolean;
     isLoading?: boolean;
+    scale?: Scale;
+    variant?: Variant;
     disabled?: boolean;
-} & ButtonTypes & SpaceProps;
-export declare type ButtonThemeVariant = {
-    background: string;
-    backgroundActive: string;
-    backgroundHover: string;
-    border: string | number;
-    borderColorHover: string;
-    boxShadow: string;
-    boxShadowActive: string;
-    color: string;
-};
-export declare type ButtonTheme = {
-    [key in Variants]: ButtonThemeVariant;
-};
-export {};
+    startIcon?: ReactNode;
+    endIcon?: ReactNode;
+}
+export declare type ButtonProps<P extends ElementType = "button"> = PolymorphicComponentProps<P, BaseButtonProps>;

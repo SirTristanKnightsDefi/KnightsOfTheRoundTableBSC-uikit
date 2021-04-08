@@ -1,4 +1,4 @@
-import React from "react";
+import { PolymorphicComponent } from "../Button/types";
 import { ButtonMenuItemProps } from "./types";
-declare const ButtonMenuItem: React.FC<ButtonMenuItemProps>;
+declare const ButtonMenuItem: PolymorphicComponent<ButtonMenuItemProps, "button">;
 export default ButtonMenuItem;
