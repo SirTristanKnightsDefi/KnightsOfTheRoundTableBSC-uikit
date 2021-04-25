@@ -86,7 +86,7 @@ const PanelFooter: React.FC<Props> = ({
               }}
             />
 
-            <Text color="textSubtle" bold>{`$${squirePriceUsd.toFixed(3)}`}</Text>
+            <Text color="textSubtle" bold>{`$${squirePriceUsd.toFixed(5)}`}</Text>
           </PriceLink>
         ) : (
           <Skeleton width={80} height={24}>

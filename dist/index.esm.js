@@ -2728,7 +2728,7 @@ var PanelFooter = function (_a) {
                     width: "24px",
                     marginRight: "8px",
                 } }),
-            React.createElement(Text, { color: "textSubtle", bold: true }, "$" + squirePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 },
+            React.createElement(Text, { color: "textSubtle", bold: true }, "$" + squirePriceUsd.toFixed(5)))) : (React.createElement(Skeleton, { width: 80, height: 24 },
             React.createElement("img", { src: "https://ipfs.io/ipfs/QmSMJy9D5MXrWsKDuZLrJNoxH5Rp55mSpAUzu48zFhjYfr?filename=squire.png", alt: "SQUIRE Logo", style: {
                     width: "24px",
                     marginRight: "8px",
