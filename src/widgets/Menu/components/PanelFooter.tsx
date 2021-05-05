@@ -58,6 +58,7 @@ const PanelFooter: React.FC<Props> = ({
   tablePriceUsd, 
   legendPriceUsd, 
   squirePriceUsd,
+  shillingPriceUsd,
   currentLang,
   langs,
   setLang,
@@ -74,6 +75,33 @@ const PanelFooter: React.FC<Props> = ({
 
   return (
     <Container>
+      <SocialEntry>
+        {shillingPriceUsd ? (
+          <PriceLink href="https://pancakeswap.info/token/" target="_blank">
+            <img
+              src="https://ipfs.io/ipfs/Qmey8kWdYJEj5VSQqBqj2aAkga9tzEZKk8ddCAmDSTDDot?filename=shilling.svg"
+              alt="SHILLING Logo"
+              style={{
+                width: "24px",
+                marginRight: "8px",
+              }}
+            />
+
+            <Text color="textSubtle" bold>{`$${shillingPriceUsd.toFixed(8)}`}</Text>
+          </PriceLink>
+        ) : (
+          <Skeleton width={80} height={24}>
+          <img
+              src="https://ipfs.io/ipfs/Qmey8kWdYJEj5VSQqBqj2aAkga9tzEZKk8ddCAmDSTDDot?filename=shilling.svg"
+              alt="SHILLING Logo"
+              style={{
+                width: "24px",
+                marginRight: "8px",
+              }}
+            />
+          </Skeleton>
+        )}
+      </SocialEntry>
       <SocialEntry>
         {squirePriceUsd ? (
           <PriceLink href="https://pancakeswap.info/token/0x2F0D21f1B84F03fB9D60004fc206C86Be6902a32" target="_blank">

@@ -2716,13 +2716,23 @@ var PriceLink = styled.a(templateObject_2$3 || (templateObject_2$3 = __makeTempl
 var SettingsEntry = styled.div(templateObject_3$1 || (templateObject_3$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
 var SocialEntry = styled.div(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
-    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd, tablePriceUsd = _a.tablePriceUsd, legendPriceUsd = _a.legendPriceUsd, squirePriceUsd = _a.squirePriceUsd; _a.currentLang; _a.langs; _a.setLang;
+    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd, tablePriceUsd = _a.tablePriceUsd, legendPriceUsd = _a.legendPriceUsd, squirePriceUsd = _a.squirePriceUsd, shillingPriceUsd = _a.shillingPriceUsd; _a.currentLang; _a.langs; _a.setLang;
     if (!isPushed) {
         return (React.createElement(Container, null,
             React.createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
                 React.createElement(Icon$T, null))));
     }
     return (React.createElement(Container, null,
+        React.createElement(SocialEntry, null, shillingPriceUsd ? (React.createElement(PriceLink, { href: "https://pancakeswap.info/token/", target: "_blank" },
+            React.createElement("img", { src: "https://ipfs.io/ipfs/Qmey8kWdYJEj5VSQqBqj2aAkga9tzEZKk8ddCAmDSTDDot?filename=shilling.svg", alt: "SHILLING Logo", style: {
+                    width: "24px",
+                    marginRight: "8px",
+                } }),
+            React.createElement(Text, { color: "textSubtle", bold: true }, "$" + shillingPriceUsd.toFixed(8)))) : (React.createElement(Skeleton, { width: 80, height: 24 },
+            React.createElement("img", { src: "https://ipfs.io/ipfs/Qmey8kWdYJEj5VSQqBqj2aAkga9tzEZKk8ddCAmDSTDDot?filename=shilling.svg", alt: "SHILLING Logo", style: {
+                    width: "24px",
+                    marginRight: "8px",
+                } })))),
         React.createElement(SocialEntry, null, squirePriceUsd ? (React.createElement(PriceLink, { href: "https://pancakeswap.info/token/0x2F0D21f1B84F03fB9D60004fc206C86Be6902a32", target: "_blank" },
             React.createElement("img", { src: "https://ipfs.io/ipfs/QmSMJy9D5MXrWsKDuZLrJNoxH5Rp55mSpAUzu48zFhjYfr?filename=squire.png", alt: "SQUIRE Logo", style: {
                     width: "24px",
@@ -3068,7 +3078,7 @@ var MobileOnlyOverlay = styled(Overlay)(templateObject_5 || (templateObject_5 = 
 });
 var Menu = function (_a) {
     var _b;
-    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, tablePriceUsd = _a.tablePriceUsd, legendPriceUsd = _a.legendPriceUsd, squirePriceUsd = _a.squirePriceUsd, links = _a.links, profile = _a.profile, children = _a.children;
+    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, tablePriceUsd = _a.tablePriceUsd, legendPriceUsd = _a.legendPriceUsd, squirePriceUsd = _a.squirePriceUsd, shillingPriceUsd = _a.shillingPriceUsd, links = _a.links, profile = _a.profile, children = _a.children;
     var isXl = useMatchBreakpoints().isXl;
     var isMobile = isXl === false;
     var _c = useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
@@ -3111,7 +3121,7 @@ var Menu = function (_a) {
                 React.createElement(UserBlock$1, { account: account, login: login, logout: logout }),
                 profile && React.createElement(Avatar, { profile: profile }))),
         React.createElement(BodyWrapper, null,
-            React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, tablePriceUsd: tablePriceUsd, legendPriceUsd: legendPriceUsd, squirePriceUsd: squirePriceUsd, pushNav: setIsPushed, links: links }),
+            React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, tablePriceUsd: tablePriceUsd, legendPriceUsd: legendPriceUsd, squirePriceUsd: squirePriceUsd, shillingPriceUsd: shillingPriceUsd, pushNav: setIsPushed, links: links }),
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };

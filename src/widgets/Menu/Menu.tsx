@@ -74,6 +74,7 @@ const Menu: React.FC<NavProps> = ({
   tablePriceUsd,
   legendPriceUsd,
   squirePriceUsd,
+  shillingPriceUsd,
   links,
   profile,
   children,
@@ -144,6 +145,7 @@ const Menu: React.FC<NavProps> = ({
           tablePriceUsd={tablePriceUsd}
           legendPriceUsd={legendPriceUsd}
           squirePriceUsd={squirePriceUsd}
+          shillingPriceUsd={shillingPriceUsd}
           pushNav={setIsPushed}
           links={links}
         />
