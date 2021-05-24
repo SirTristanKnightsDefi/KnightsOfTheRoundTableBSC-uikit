@@ -2727,7 +2727,7 @@ var Container = styled__default['default'].div(templateObject_1$8 || (templateOb
 });
 var PriceLink = styled__default['default'].a(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var SettingsEntry = styled__default['default'].div(templateObject_3$1 || (templateObject_3$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
-var SocialEntry = styled__default['default'].div(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
+var SocialEntry = styled__default['default'].div(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
     var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd, tablePriceUsd = _a.tablePriceUsd, legendPriceUsd = _a.legendPriceUsd, squirePriceUsd = _a.squirePriceUsd, shillingPriceUsd = _a.shillingPriceUsd; _a.currentLang; _a.langs; _a.setLang;
     if (!isPushed) {
@@ -2773,7 +2773,7 @@ var PanelFooter = function (_a) {
                         width: "24px",
                         marginRight: "8px",
                     } }),
-                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + legendPriceUsd.toFixed(4)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 },
+                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + legendPriceUsd.toFixed(2)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 },
                 React__default['default'].createElement("img", { src: "https://ipfs.io/ipfs/QmdUYMd2jcqxAauh9spWr181SN8iguonMaFszWedcuwiD9?filename=legend.png", alt: "LEGEND Logo", style: {
                         width: "24px",
                         marginRight: "8px",

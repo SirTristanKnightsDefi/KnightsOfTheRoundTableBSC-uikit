@@ -46,7 +46,7 @@ const SocialEntry = styled.div`
   align-items: center;
   justify-content: space-between;
   height: ${MENU_ENTRY_HEIGHT}px;
-  padding: 0 16px;
+  padding: 0 8px;
 `;
 
 const PanelFooter: React.FC<Props> = ({
@@ -165,7 +165,7 @@ const PanelFooter: React.FC<Props> = ({
                 marginRight: "8px",
               }}
             />
-            <Text color="textSubtle" bold>{`$${legendPriceUsd.toFixed(4)}`}</Text>
+            <Text color="textSubtle" bold>{`$${legendPriceUsd.toFixed(2)}`}</Text>
           </PriceLink>
         ) : (
           <Skeleton width={80} height={24}>
