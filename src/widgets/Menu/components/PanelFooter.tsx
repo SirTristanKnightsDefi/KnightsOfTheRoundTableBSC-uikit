@@ -128,8 +128,6 @@ const PanelFooter: React.FC<Props> = ({
             />
           </Skeleton>
         )}
-      </SocialEntry>
-      <SocialEntry>
         {cakePriceUsd ? (
           <PriceLink href="https://pancakeswap.info/token/0x16C0e0936E1B38Ff1F9b8a1e75d8ba29aDf87d30" target="_blank">
             <img
@@ -181,8 +179,6 @@ const PanelFooter: React.FC<Props> = ({
             />
           </Skeleton>
         )}
-      </SocialEntry>
-      <SocialEntry>
         {tablePriceUsd ? (
           <PriceLink href="https://pancakeswap.info/token/0xf5a2f7418035ce76967f515f39d65719bb0453b6" target="_blank">
             <img
