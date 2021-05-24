@@ -2760,7 +2760,7 @@ var PanelFooter = function (_a) {
                         width: "24px",
                         marginRight: "8px",
                     } }),
-                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + legendPriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 },
+                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + legendPriceUsd.toFixed(4)))) : (React.createElement(Skeleton, { width: 80, height: 24 },
                 React.createElement("img", { src: "https://ipfs.io/ipfs/QmdUYMd2jcqxAauh9spWr181SN8iguonMaFszWedcuwiD9?filename=legend.png", alt: "LEGEND Logo", style: {
                         width: "24px",
                         marginRight: "8px",
@@ -2770,7 +2770,7 @@ var PanelFooter = function (_a) {
                         width: "24px",
                         marginRight: "8px",
                     } }),
-                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + tablePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 },
+                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + tablePriceUsd.toFixed(1)))) : (React.createElement(Skeleton, { width: 80, height: 24 },
                 React.createElement("img", { src: "https://ipfs.io/ipfs/QmXv83F1Qp1kv812msr2QfcHh8Uh5S1Gb1XeH5qZFS8EVV?filename=table.png", alt: "TABLE Logo", style: {
                         width: "24px",
                         marginRight: "8px",

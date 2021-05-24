@@ -165,7 +165,7 @@ const PanelFooter: React.FC<Props> = ({
                 marginRight: "8px",
               }}
             />
-            <Text color="textSubtle" bold>{`$${legendPriceUsd.toFixed(3)}`}</Text>
+            <Text color="textSubtle" bold>{`$${legendPriceUsd.toFixed(4)}`}</Text>
           </PriceLink>
         ) : (
           <Skeleton width={80} height={24}>
@@ -189,7 +189,7 @@ const PanelFooter: React.FC<Props> = ({
                 marginRight: "8px",
               }}
             />
-            <Text color="textSubtle" bold>{`$${tablePriceUsd.toFixed(3)}`}</Text>
+            <Text color="textSubtle" bold>{`$${tablePriceUsd.toFixed(1)}`}</Text>
           </PriceLink>
         ) : (
           <Skeleton width={80} height={24}>
