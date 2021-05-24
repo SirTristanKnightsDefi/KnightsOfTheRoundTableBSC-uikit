@@ -2589,7 +2589,7 @@ var socials = [
     },
 ];
 var MENU_HEIGHT = 64;
-var MENU_ENTRY_HEIGHT = 48;
+var MENU_ENTRY_HEIGHT = 32;
 var SIDEBAR_WIDTH_FULL = 240;
 var SIDEBAR_WIDTH_REDUCED = 56;
 
