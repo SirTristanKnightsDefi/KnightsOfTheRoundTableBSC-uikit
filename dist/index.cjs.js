@@ -2762,7 +2762,7 @@ var PanelFooter = function (_a) {
                         width: "24px",
                         marginRight: "8px",
                     } }),
-                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 },
+                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(4)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 },
                 React__default['default'].createElement("img", { src: "https://ipfs.io/ipfs/QmREFZU2mdg1Sv1Q2Ma8sB63uWBN9MsJ1WULWZ1Q1vk2ND?filename=knight.png", alt: "KNIGHT Logo", style: {
                         width: "24px",
                         marginRight: "8px",

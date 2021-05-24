@@ -2749,7 +2749,7 @@ var PanelFooter = function (_a) {
                         width: "24px",
                         marginRight: "8px",
                     } }),
-                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 },
+                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(4)))) : (React.createElement(Skeleton, { width: 80, height: 24 },
                 React.createElement("img", { src: "https://ipfs.io/ipfs/QmREFZU2mdg1Sv1Q2Ma8sB63uWBN9MsJ1WULWZ1Q1vk2ND?filename=knight.png", alt: "KNIGHT Logo", style: {
                         width: "24px",
                         marginRight: "8px",

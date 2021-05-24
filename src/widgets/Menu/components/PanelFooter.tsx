@@ -139,7 +139,7 @@ const PanelFooter: React.FC<Props> = ({
               }}
             />
 
-            <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+            <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(4)}`}</Text>
           </PriceLink>
         ) : (
           <Skeleton width={80} height={24}>
