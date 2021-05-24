@@ -45,7 +45,7 @@ const SocialEntry = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: ${MENU_ENTRY_HEIGHT}px;
+  height: 36px;
   padding: 0 8px;
 `;
 
